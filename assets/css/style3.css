@@ -1,0 +1,87 @@
+body{
+    background-image: url(/assets/img/boliviainteligente-37WxvlfW3to-unsplash.jpg);
+}
+.contenedor {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Ocupa el 100% del alto de la pantalla */
+    text-align: center;
+    flex-direction: column;
+   
+}
+.contenedor h1{
+    color: aqua;
+}
+.navbar-imagen{
+    width:30px;
+    
+  }
+  .imagenLogo{
+    fill:blueviolet;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 10px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+table {
+    width: 100%; /* Aumenta el ancho al 100% del contenedor */
+    max-width: 800px; /* Aumenta el tamaño máximo de la tabla */
+    border-collapse: collapse; /* Asegura que los bordes no se superpongan */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-style: outset;
+}
+
+table, th, td {
+    border: 2px solid black; 
+}
+
+th, td {
+    padding: 20px; 
+    font-size: 18px; 
+    color:blueviolet;
+    background-color:beige;
+}
+
+thead th {
+    background-color: #f2f2f2;
+    font-size: 20px; 
+    
+}
+
+@media (max-width: 768px) {
+    th, td {
+        padding: 8px; 
+    }
+
+    
+    table {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px) {
+    th, td {
+        padding: 6px; 
+        font-size: 12px; 
+    }
+
+   
+    table {
+        font-size: 12px;
+    }
+}

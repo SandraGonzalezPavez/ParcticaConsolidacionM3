@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica de Consolidacion</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/BootstrapcCSS/bootstrap.min.css">
+</head>
+
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg bg-info navbar-dark">
+    <div class="container-fluid">
+      <div class="navbar-imagen">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path class="imagenLogo" d="M240.1 4.2c9.8-5.6 21.9-5.6 31.8 0l171.8 98.1L448 104l0 .9 47.9 27.4c12.6 7.2 18.8 22 15.1 36s-16.4 23.8-30.9 23.8L32 192c-14.5 0-27.2-9.8-30.9-23.8s2.5-28.8 15.1-36L64 104.9l0-.9 4.4-1.6L240.1 4.2zM64 224l64 0 0 192 40 0 0-192 64 0 0 192 48 0 0-192 64 0 0 192 40 0 0-192 64 0 0 196.3c.6 .3 1.2 .7 1.8 1.1l48 32c11.7 7.8 17 22.4 12.9 35.9S494.1 512 480 512L32 512c-14.1 0-26.5-9.2-30.6-22.7s1.1-28.1 12.9-35.9l48-32c.6-.4 1.2-.7 1.8-1.1L64 224z"/></svg>
+    </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Principal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./preguntas.html">Preguntas frecuentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./manuales.html">Manuales y tutoriales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./noticias.html">Noticias</a>
+          </li>
+          <li class="nav-item"></li>
+            <a class="nav-link" href="./calendario.html">Calendario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./admin.html">Admin. Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/organigrama.html">Organigrama</a>
+          </li>
+          <li class="nav-item"></li>
+            <a class="nav-link" href="#">Chat</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="chat-container">
+    
+    <div class="conversaciones-container">
+      <button class="toggle-list">Conversaciones recientes</button>
+      <ul class="conversaciones-list">
+      
+
+        <div class="conversacion">
+        <li>
+          <img src="./assets/img/vecteezy_male-3d-avatar_27245487.png" alt="Foto de perfil" class="chat-foto">
+          <span class="nombre">Juan Pérez</span>
+          <span class="hora">10:30 AM</span>
+        </li>
+        </div>
+        <div class="conversacion">
+          <li >
+            <img src="./assets/img/vecteezy_lady-face-3d-rendering-icon-illustration_29253662.png" alt="Foto de perfil" class="chat-foto">
+            <span class="nombre">María López</span>
+            <span class="hora">Ayer</span>
+            </li>
+        </div>
+        <div class="conversacion">
+          <li >
+            <img src="./assets/img/vecteezy_waitress-3d-profession-avatars-illustrations_28203021.png" alt="Foto de perfil" class="chat-foto">
+            <span class="nombre">Sandra González</span>
+            <span class="hora">07:00 PM</span>
+            </li>
+        </div>
+        <div class="conversacion">
+          <li >
+            <img src="./assets/img/vecteezy_3d-icons-occupation-job-avatar-for-social-media-profile_28169648.png" alt="Foto de perfil" class="chat-foto">
+            <span class="nombre">Andrés Salazar</span>
+            <span class="hora">Ayer</span>
+          </li>
+        </div>
+        <div class="conversacion">
+          <li >
+            <img src="./assets/img/vecteezy_male-3d-avatar_27245487.png" alt="Foto de perfil" class="chat-foto">
+            <span class="nombre">Nicolás Astorga</span>
+            <span class="hora">Domingo</span>
+            </li>
+        </div>
+        
+        
+        
+        
+
+      </ul>
+    </div>
+
+    <!-- Ventana del chat -->
+    <div class="chat-window">
+      <div class="chat-header">
+        <img src="./assets/img/vecteezy_male-3d-avatar_27245487.png" alt="Foto de perfil" class="chat-foto">
+        <span class="chat-nombre">Juan Pérez</span>
+      </div>
+      <div class="chat-body">
+        <div class="mensaje emisor">
+          <p>Hola, ¿cómo estás?</p>
+          <span class="hora-mensaje">10:00 AM</span>
+        </div>
+        <div class="mensaje receptor">
+          <p>Todo bien, gracias.</p>
+          <span class="hora-mensaje">10:05 AM</span>
+        </div>
+        <!-- Más mensajes aquí -->
+      </div>
+      <div class="chat-footer">
+        <input type="text" placeholder="Escribe un mensaje...">
+        <button class="send-btn">Enviar</button>
+        <div class="dropdown">
+          <button class="dropdown-toggle">Adjuntar</button>
+          <ul class="dropdown-menu">
+            <li>Imagen</li>
+            <li>Video</li>
+            <li>Documento</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="./assets/js/logica.js"></script>
+  <script src="./assets/js/BootstrapJS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

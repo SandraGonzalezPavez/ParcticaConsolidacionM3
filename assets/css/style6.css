@@ -1,0 +1,63 @@
+body{
+    background-image: url(/assets/img/boliviainteligente-37WxvlfW3to-unsplash.jpg);
+}
+
+.navbar {
+    position: fixed; /* Fija la barra de navegación en la parte superior */
+    top: 0; /* Asegura que esté al borde superior */
+    left: 0;
+    width: 100%; /* Ocupará todo el ancho de la pantalla */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #007bff;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos*/
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  
+  }
+  .navbar-imagen{
+    width:30px;
+    
+  }
+  .imagenLogo{
+    fill:#007bff
+  }
+  .nav-toggle {
+    display: block;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 10px;
+  }
+  
+  .nav-links a {
+    color: #221e1e;
+    text-decoration: none;
+  }
+
+.card-container{
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-around;
+    gap: 20px;
+     flex-wrap: wrap;
+    }
+
+@media (max-width: 992px) {
+  .card {
+    width: 45%; /* Ajusta el ancho de las tarjetas a la mitad de la pantalla */
+  }
+}
+
+/* Para pantallas móviles */
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* En móviles, las tarjetas ocupan el 100% del ancho */
+  }
+}
+
