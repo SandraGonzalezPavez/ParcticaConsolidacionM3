@@ -83,7 +83,7 @@ body {
     display: none;
   }
   
-  .conversaciones-list {
+  .conversaciones-list.show {
     display: block;
   }
   .conversaciones-list li {

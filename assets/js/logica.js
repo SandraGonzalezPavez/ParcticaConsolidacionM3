@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
       chatBody.innerHTML = '';
   
       // Agrega mensajes de ejemplo para el chat seleccionado
-      // Puedes reemplazar esto con mensajes reales de tu sistema
+      
       if (nombre === 'Juan Pérez') {
         agregarMensaje('Hola, ¿cómo estás?', 'receptor');
         agregarMensaje('Todo bien, gracias.', 'emisor');
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   
-    // También puedes agregar la funcionalidad de enviar con la tecla Enter
+    
     messageInput.addEventListener('keypress', function (event) {
       if (event.key === 'Enter') {
         sendButton.click();
@@ -102,4 +102,13 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.querySelector('.toggle-list');
+    const conversacionesList = document.querySelector('.conversaciones-list');
+  
+    toggleButton.addEventListener('click', () => {
+      conversacionesList.classList.toggle('show');
+    });
+  });
+  
   
