@@ -2,7 +2,7 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    background-image: url(/assets/img/boliviainteligente-37WxvlfW3to-unsplash.jpg);
+    background-image: url('../img/boliviainteligente-37WxvlfW3to-unsplash.jpg');
 }
 .navbar {
     position: fixed; /* Fija la barra de navegación en la parte superior */
