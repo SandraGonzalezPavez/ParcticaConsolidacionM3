@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   
     // Evento al presionar el botón de enviar
-    sendButton.addEventListener('click', function () {
+    sendButton[0].addEventListener('click', function () {
       const mensaje = messageInput.value.trim();
       if (mensaje !== '') {
         agregarMensaje(mensaje, 'emisor'); // Añade el mensaje enviado por el usuario
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const toggleButton = document.querySelector('.toggle-list');
     const conversacionesList = document.querySelector('.conversaciones-list');
   
-    toggleButton.addEventListener('click', () => {
+    toggleButton[0].addEventListener('click', () => {
       conversacionesList.classList.toggle('show');
     });
   });
