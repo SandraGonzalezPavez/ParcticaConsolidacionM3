@@ -115,6 +115,11 @@ body {
     height: 40px;
     border-radius: 50%;
     margin-right: 10px;
+    transition: width 2s, height 2s;
+  }
+  .chat-foto:hover{
+width:80px;
+height:80px;
   }
   
   .chat-body {
