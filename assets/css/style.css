@@ -82,6 +82,9 @@ body {
   .conversaciones-list {
     display: none;
   }
+  .conversaciones-list.show{
+    display:block;
+  }
   
   .conversaciones-list li {
     display: flex;

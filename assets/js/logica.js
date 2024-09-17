@@ -103,3 +103,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
   
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.querySelector('.toggle-list');
+    const conversacionesList = document.querySelector('.conversaciones-list');
+  
+    toggleButton.addEventListener('click', () => {
+      conversacionesList.classList.toggle('show');
+    });
+  });
+  
