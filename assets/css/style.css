@@ -96,10 +96,17 @@ body {
   }
   
   
-  .conversacion{
-    border-bottom: #cc28cc solid;
-    box-shadow:0 4px 6pxrgba(0, 0, 0, 0.2);
-  }
+  .conversacion {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+.conversacion.clickeada {
+ font-weight: normal;
+}
   /* Ventana de chat */
   .chat-window {
     background-color: rgba(255, 255, 255, 0.9);

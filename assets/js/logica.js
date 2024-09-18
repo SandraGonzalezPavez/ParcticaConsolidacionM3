@@ -50,6 +50,29 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
+// Asignar el evento click a cada conversación usando su ID
+document.getElementById('conversacion-juan').addEventListener('click', function() {
+  cambiarEstilo('conversacion-juan');
+});
+document.getElementById('conversacion-maria').addEventListener('click', function() {
+  cambiarEstilo('conversacion-maria');
+});
+document.getElementById('conversacion-sandra').addEventListener('click', function() {
+  cambiarEstilo('conversacion-sandra');
+});
+document.getElementById('conversacion-andres').addEventListener('click', function() {
+  cambiarEstilo('conversacion-andres');
+});
+document.getElementById('conversacion-nicolas').addEventListener('click', function() {
+  cambiarEstilo('conversacion-nicolas');
+});
+
+// Función para cambiar el estilo de la conversación seleccionada
+function cambiarEstilo(id) {
+  
+  // Agregar la clase 'clickeada' a la conversación seleccionada
+  document.getElementById(id).classList.add('clickeada');
+}
 
   // Función para mostrar los mensajes del chat seleccionado
   function mostrarChat(nombre) {
